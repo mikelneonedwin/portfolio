@@ -10,13 +10,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { Link, useLocation } from "@tanstack/react-router";
-import {
-  BriefcaseBusiness,
-  Code2,
-  FolderOpenDot,
-  Mail,
-  User
-} from "lucide-react";
+import { BriefcaseBusiness, Code2, User } from "lucide-react";
 import { useEffect, useState } from "react";
 
 type Section = {
@@ -27,10 +21,9 @@ type Section = {
 
 const sections: Section[] = [
   { id: "about", icon: User, href: "/" },
-  { id: "skills", icon: Code2, href: "/" },
-  { id: "projects", icon: FolderOpenDot, href: "/projects" },
+  { id: "stack", icon: Code2, href: "/" },
+  // { id: "projects", icon: FolderOpenDot, href: "/projects" },
   { id: "work-experience", icon: BriefcaseBusiness, href: "/work-experience" },
-  { id: "contact", icon: Mail, href: "/" },
 ];
 
 export function AppSidebar() {

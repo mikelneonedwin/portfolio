@@ -1,5 +1,7 @@
 import { AppSidebar } from "@/components/app-sidebar";
+import { ModeToggle } from "@/components/mode-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Separator } from "@/components/ui/separator";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 import Lenis from "lenis";
@@ -22,8 +24,16 @@ function RootComponent() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <SidebarProvider open={false}>
         <AppSidebar />
-        <main className="container mx-auto max-w-5xl">
-          <Outlet />
+        <main className="w-full">
+          <div className="sticky md:absolute top-0 bg-background/90 md:bg-none z-10">
+            <div className="p-4">
+              <ModeToggle />
+            </div>
+            <Separator className="md:hidden" />
+          </div>
+          <div className="container mx-auto max-w-5xl px-2">
+            <Outlet />
+          </div>
         </main>
       </SidebarProvider>
     </ThemeProvider>

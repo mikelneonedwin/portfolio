@@ -4,6 +4,7 @@ export type Project = {
   company: string;
   location: string;
   website: string;
+  github?: string;
   description: string[];
   technologies: string[];
 };
