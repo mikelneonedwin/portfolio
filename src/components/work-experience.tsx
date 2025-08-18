@@ -40,7 +40,7 @@ function Box(project: Project) {
 }
 
 function WorkExperience() {
-  const previewCount = 5; // show first 3 on homepage
+  const previewCount = 3; // show first 3 on homepage
 
   return (
     <section id="work-experience" className="py-8">
