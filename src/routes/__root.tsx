@@ -24,9 +24,9 @@ function RootComponent() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <SidebarProvider open={false}>
         <AppSidebar />
-        <main className="w-full">
-          <div className="sticky md:absolute top-0 bg-background/90 md:bg-none z-10">
-            <div className="p-4">
+        <main className="w-full relative">
+          <div className="sticky md:absolute top-0 w-full bg-background/90 md:bg-transparent z-10">
+            <div className="p-4 flex justify-end">
               <ModeToggle />
             </div>
             <Separator className="md:hidden" />
