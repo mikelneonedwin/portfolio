@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Stack = () => {
   return (
-    <div id="stack">
+    <div id="stack" className="py-8">
       <Marquee autoFill pauseOnHover speed={50} direction="left">
         {stack.map((item) => (
           <Button
