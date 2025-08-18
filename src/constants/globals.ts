@@ -1,5 +1,5 @@
 export const GITHUB_URL = "https://github.com/mikelneonedwin";
-export const FACEBOOK_URL = "https://www.facebook.com/winneredwin2667";
+export const FACEBOOK_URL = "https://fb.me/winneredwin2667";
 export const X_URL = "https://x.com/mikelneonedwin";
 export const EMAIL = "winneredwin2667@gmail.com";
 export const EMAIL_URL = `mailto:${EMAIL}`;
