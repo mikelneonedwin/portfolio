@@ -15,12 +15,36 @@ export const personalProjects: Experience[] = [
   {
     date: "August 2025",
     title: "JZ",
+    company: "School Project",
+    location: "University of Uyo",
     github: "https://github.com/mikelneonedwin/JZ",
     description: [
-      "GUI version of JQuiz built with Java",
-      "Uses Swing for the interface and PostgreSQL for persistence",
+      "GUI-based programming quiz application with multiple categories for different languages",
+      "Built using Swing for the interface and PostgreSQL for persistence",
     ],
     technologies: ["Java", "Swing", "PostgreSQL"],
+  },
+
+  {
+    date: "July 2025 - August 2025",
+    title: "Planora (Team Lead)",
+    company: "School Project",
+    location: "University of Uyo",
+    website: "https://planora-g9.vercel.app",
+    github: "https://github.com/Faculty-of-Computing/planora",
+    description: [
+      "Event management system built as a school project",
+      "Led the team in development and coordination",
+      "Implemented event scheduling, management, and tracking features",
+    ],
+    technologies: [
+      "TailwindCSS",
+      "Flask",
+      "PostgreSQL",
+      "Python",
+      "HTML",
+      "JavaScript",
+    ],
   },
   {
     date: "May 2025",
@@ -40,7 +64,7 @@ export const personalProjects: Experience[] = [
     website: "https://voysa.vercel.app",
     github: "https://github.com/mikelneonedwin/voysa",
     description: [
-      "Social platform project, winner of SuiOverflow Hackathon at Uniuyo 2025",
+      "Social platform project, winner of SuiOverflow Hackathon at University of Uyo 2025",
       "Led frontend development and built scalable UI with React and Vite",
     ],
     technologies: ["Vite", "React", "TypeScript", "TailwindCSS"],
@@ -76,7 +100,7 @@ export const personalProjects: Experience[] = [
     location: "University of Uyo",
     description: [
       "Educational tool for students providing AI-assisted learning",
-      "Winner of GDGOC Uniuyo EduSolutions Hackathon 2024",
+      "Winner of GDGOC University of Uyo EduSolutions Hackathon 2024",
       "Goal: leverage AI to enhance studying and personalized learning",
     ],
     technologies: [
@@ -131,11 +155,12 @@ export const personalProjects: Experience[] = [
     title: "AudHub",
     website: "https://audhub.vercel.app",
     description: [
-      "Online streaming platform built as a learning project",
-      "Explored streaming, ranking algorithms and database integration",
+      "Music streaming platform built as a learning project",
+      "Implemented streaming features, ranking algorithms, and database integration",
     ],
     technologies: ["Firebase", "HTML", "CSS", "JavaScript"],
   },
+
   {
     date: "August 2023",
     title: "30 V1 Submission Portal",
@@ -148,26 +173,5 @@ export const personalProjects: Experience[] = [
       "Handles project submissions and basic project listing",
     ],
     technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
-  },
-  {
-    date: "July - August 2025",
-    title: "Planora (Team Lead)",
-    company: "School Project",
-    location: "University of Uyo",
-    website: "https://planora-g9.vercel.app",
-    github: "https://github.com/Faculty-of-Computing/planora",
-    description: [
-      "Event management system built as a school project",
-      "Led the team in development and coordination",
-      "Implemented event scheduling, management, and tracking features",
-    ],
-    technologies: [
-      "TailwindCSS",
-      "Flask",
-      "PostgreSQL",
-      "Python",
-      "HTML",
-      "JavaScript",
-    ],
   },
 ];
