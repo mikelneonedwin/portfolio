@@ -1,8 +1,10 @@
 import About from "@/components/about";
+import ExperienceMarquee from "@/components/home/work-marquee";
 import Profile from "@/components/profile";
 import Stack from "@/components/stack";
 import Experiences from "@/components/work-display";
-import { personalProjects, workExperiences } from "@/constants/experiences";
+import { personalProjects } from "@/constants/personal-projects";
+import { workExperiences } from "@/constants/work-experiences";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -10,6 +12,7 @@ export const Route = createFileRoute("/")({
 });
 
 function RouteComponent() {
+  const allExperiences = [...workExperiences, ...personalProjects];
   return (
     <>
       <Profile />
@@ -21,6 +24,7 @@ function RouteComponent() {
           experiences={workExperiences}
           more={{ id: "work-experience", count: 4, to: "/work-experience" }}
         />
+        <ExperienceMarquee experiences={allExperiences} />
         <Experiences
           title="Personal Projects"
           experiences={personalProjects}

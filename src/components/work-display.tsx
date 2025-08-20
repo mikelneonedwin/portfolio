@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { workExperiences, type Experience } from "@/constants/experiences";
-import { ExternalLink } from "lucide-react";
-import { Link, type LinkOptions } from "@tanstack/react-router";
+import { workExperiences } from "@/constants/work-experiences";
+import type { Experience } from "@/types";
 import { Icon } from "@iconify/react";
+import { Link, type LinkOptions } from "@tanstack/react-router";
+import { ExternalLink } from "lucide-react";
 
 type Props = {
   title: string;
